@@ -7,20 +7,14 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GeneratePackageOnBuild Condition="'$(Configuration)' == 'Release'">true</GeneratePackageOnBuild>
     <PackageTags>nuext;devexpress;dxmvvm;dx;mvvm;wpf;xaml;ui;metro;modern;async</PackageTags>
-    <Description>Extensions for the MahApps.Metro toolkit using the DevExpress MVVM Framework for streamlined Metro-style WPF app development.
-
-Commonly Used Types:
-DevExpress.Mvvm.UI.DialogCoordinatorService
-DevExpress.Mvvm.UI.MetroDialogService
-DevExpress.Mvvm.UI.MetroTabbedDocumentUIService
-MahApps.Metro.Controls.Dialogs.MetroDialog</Description>
-    <Version>0.7.0-pre</Version>
+    <Description>Extensions for the MahApps.Metro toolkit using the DevExpress MVVM Framework for streamlined Metro-style WPF app development.</Description>
+    <Version>0.7.1-pre</Version>
     <RootNamespace>DevExpress.Mvvm</RootNamespace>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591;NETSDK1233</NoWarn>
     <PackageReadmeFile>README.md</PackageReadmeFile>
     <PackageIcon>logo128.png</PackageIcon>
-    <PackageProjectUrl>https://github.com/IvanGit/NuExt.DevExpress.Mvvm.MahApps.Metro</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/ivanvoyager/NuExt.DevExpress.Mvvm.MahApps.Metro</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -28,7 +22,7 @@ MahApps.Metro.Controls.Dialogs.MetroDialog</Description>
   </ItemGroup>
 
   <ItemGroup Condition="'$(UseNuExtPackages)' == 'true'">
-    <PackageReference Include="NuExt.DevExpress.Mvvm" Version="0.7.0" />
+    <PackageReference Include="NuExt.DevExpress.Mvvm" Version="0.7.1" />
   </ItemGroup>
 
   <ItemGroup Condition="'$(UseNuExtPackages)' == 'false'">
@@ -37,7 +31,7 @@ MahApps.Metro.Controls.Dialogs.MetroDialog</Description>
 
   <ItemGroup>
     <None Include="..\logo128.png" Pack="true" PackagePath="\" />
-    <None Include=".\..\README.md" Pack="true" PackagePath="\" />
+    <None Include="..\README.md" Pack="true" PackagePath="\" />
   </ItemGroup>
 
 </Project>
