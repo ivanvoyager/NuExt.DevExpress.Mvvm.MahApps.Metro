@@ -1,10 +1,9 @@
 ﻿using DevExpress.Mvvm;
 using MovieWpfApp.Models;
 
-namespace MovieWpfApp.Interfaces.Services
+namespace MovieWpfApp.Interfaces.Services;
+
+public interface IApplicationService: ISupportServices
 {
-    public interface IApplicationService: ISupportServices
-    {
-        AppSettings Settings { get; }
-    }
+    AppSettings Settings { get; }
 }

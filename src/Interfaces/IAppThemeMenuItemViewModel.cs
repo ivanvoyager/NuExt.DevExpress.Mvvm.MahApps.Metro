@@ -1,14 +1,13 @@
 ﻿using System.Windows.Media;
 
-namespace DevExpress.Mvvm
-{
-    public interface IAccentColorMenuItemViewModel : IMenuItemViewModel
-    {
-        Brush? BorderColorBrush { get; }
-        Brush? ColorBrush { get; }
-    }
+namespace DevExpress.Mvvm;
 
-    public interface IAppThemeMenuItemViewModel : IAccentColorMenuItemViewModel
-    {
-    }
+public interface IAccentColorMenuItemViewModel : IMenuItemViewModel
+{
+    Brush? BorderColorBrush { get; }
+    Brush? ColorBrush { get; }
+}
+
+public interface IAppThemeMenuItemViewModel : IAccentColorMenuItemViewModel
+{
 }

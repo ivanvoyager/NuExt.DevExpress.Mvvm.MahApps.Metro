@@ -1,0 +1,4 @@
+<Solution>
+  <Project Path="samples/MetroWpfApp/MovieWpfApp.csproj" />
+  <Project Path="src/NuExt.DevExpress.Mvvm.MahApps.Metro.csproj" />
+</Solution>

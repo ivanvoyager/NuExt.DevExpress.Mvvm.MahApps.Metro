@@ -1,13 +1,12 @@
 ﻿using DevExpress.Mvvm;
 
-namespace MovieWpfApp.Models
+namespace MovieWpfApp.Models;
+
+public sealed class AppSettings : BindableSettings
 {
-    public sealed class AppSettings : BindableSettings
+    public string? AppTheme
     {
-        public string? AppTheme
-        {
-            get { return GetProperty(() => AppTheme); }
-            set { SetProperty(() => AppTheme, value); }
-        }
+        get { return GetProperty(() => AppTheme); }
+        set { SetProperty(() => AppTheme, value); }
     }
 }
